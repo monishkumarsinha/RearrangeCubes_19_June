@@ -1,0 +1,131 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: #EFEFEF;
+}
+.actions{
+    width: 25vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actions button{
+    width: 70%;
+    margin-top: 30px;
+    padding: 10px 0px;
+    background-color: #72C3DC;
+    border-radius: 6px;
+    box-shadow: 0px 5px 0px 0px #2b8ead;
+    border: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.cubes{
+    width: 75vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cubeWidth{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    color: #FFFFFF;
+    background-image: none;
+}
+
+.footer{
+    display: flex;
+    height: 60px;
+    align-items:center;
+    justify-content: center;
+    background-color: #EFEFEF;
+    font-size: .8em;
+}
+.header{
+    display: flex;
+    height: 60px;
+    align-items:center;
+    justify-content: center;
+    border-bottom: 6px solid #BFBFBF;
+    font-size: 1.5em;
+}
+
+body {
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 375px) {
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex: 1;
+    }
+    .actions{
+        width: 90%;
+        height: 40px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /*align-content: center;*/
+        justify-content: space-around;
+    }
+
+    .actions button{
+        width: 30%;
+        margin-top: 0px;
+        padding: 5px 0px;
+        background-color: #72C3DC;
+        border-radius: 6px;
+        box-shadow: 0px 2px 0px 0px #2b8ead;
+        border: 0px;
+    }
+    .cubes{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .cubeWidth{
+        margin: 2px 0px;
+        width: 100%;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        color: black;
+        background-color: #EFEFEF !important;
+    }
+
+    .header{
+        background-color: #333333;
+        color: #FFFFFF;
+        font-size: 1.5em;
+        border: none;
+    }
+    .content, .footer{
+        background-color: #FFFFFF;
+    }
+
+
+}
+
